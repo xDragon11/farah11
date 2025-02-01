@@ -7,13 +7,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://l.top4top.io/p_3318hg2a81.jpg'); /* رابط الصورة الخلفية */
-    background-size: cover; /* لتغطية الصفحة بالكامل */
-    background-position: center; /* لتوسيط الصورة */
+    background-image: url('https://j.top4top.io/p_3318ufj4o1.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8); /* خلفية بيضاء شفافة */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -22,11 +22,11 @@ body {
 .board {
     display: inline-block;
     margin-top: 20px;
-    transition: transform 0.5s ease; /* إضافة تأثير تحريك */
+    transition: transform 0.5s ease;
 }
 
 .board.celebrate {
-    transform: translateY(-20px); /* تحريك المربعات لأعلى */
+    transform: translateY(-20px);
 }
 
 .row {
@@ -50,19 +50,19 @@ body {
 }
 
 .cell[data-player="X"] {
-    background-color: rgba(255, 0, 0, 0.1); /* خلفية حمراء خفيفة لـ X */
+    background-color: rgba(255, 0, 0, 0.1);
 }
 
 .cell[data-player="O"] {
-    background-color: rgba(0, 0, 255, 0.1); /* خلفية زرقاء خفيفة لـ O */
+    background-color: rgba(0, 0, 255, 0.1);
 }
 
 #message {
     margin-top: 20px;
     font-size: 20px;
-    color: #4CAF50; /* لون الرسالة */
+    color: #4CAF50;
     font-weight: bold;
-    animation: celebrate 2s infinite; /* إضافة تأثير إحتفالي للرسالة */
+    animation: celebrate 2s infinite;
 }
 
 @keyframes celebrate {
