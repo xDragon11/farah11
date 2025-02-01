@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://l.top4top.io/p_3318hg2a81.jpg'); /* رابط الصورة الخلفية */
+    background-size: cover; /* لتغطية الصفحة بالكامل */
+    background-position: center; /* لتوسيط الصورة */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* خلفية بيضاء شفافة */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.board {
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.5s ease; /* إضافة تأثير تحريك */
+}
+
+.board.celebrate {
+    transform: translateY(-20px); /* تحريك المربعات لأعلى */
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+.cell[data-player="X"] {
+    background-color: rgba(255, 0, 0, 0.1); /* خلفية حمراء خفيفة لـ X */
+}
+
+.cell[data-player="O"] {
+    background-color: rgba(0, 0, 255, 0.1); /* خلفية زرقاء خفيفة لـ O */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #4CAF50; /* لون الرسالة */
+    font-weight: bold;
+    animation: celebrate 2s infinite; /* إضافة تأثير إحتفالي للرسالة */
+}
+
+@keyframes celebrate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
